@@ -148,7 +148,7 @@ console.log(Roles[select]);
         fill: 'forwards' // Keep the final state after animation
       }
     );
-	setTimeout(() => {selectedElement.src="membership-liberal.png"},500);
+	setTimeout(() => {selectedElement.src="membership-liberal.png"},2000);
 		Roles.shift();
 		
 }	else if(Roles[select] == 'fascist'){
