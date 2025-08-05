@@ -1,0 +1,83 @@
+html {
+scroll-behavior: smooth;
+}
+body{
+	background-color: #FBB969 !important;
+	font-family: "futura-pt", Futura, sans-serif !important;
+	text-align: center;
+	
+	overflow-x: hidden
+}
+h1 {
+	color: #434343;
+}
+h2 {
+	color: #434343;
+}
+h3 {
+	color: #434343;
+	text-decoration: bold;
+}
+h4 {
+	color: #434343;
+	text-decoration: none;
+}
+p {
+	color: #434343;
+	font-size: 22px;
+}
+img {
+	width: 100%;
+}
+a {
+	cursor: pointer;
+}
+/*img:hover{
+	animation: imgblink .5s linear 5;	
+}*/
+input[type="range"] {
+  accent-color: #F2654B; /* Change to your desired color */
+  width: 75%;
+  max-width: 400px;
+  cursor: pointer;
+  border-radius:15px;
+}
+button {
+	background-color: #F2654B;
+	color: #434343;
+	border: none;
+	height: 50px;
+	width: 15%;
+	min-width: 100px;
+	margin-bottom: 500px;
+}
+#logo001 {
+  margin-top: 50px;
+  border: 5px solid #e0c097; /* optional: faded frame look */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* subtle shadow */
+  width: 75%;
+  min-width: 300px;
+
+}
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+col {
+	align: center !important;
+}
+/*#col001 {
+	background-color: blue;
+}*/
+.cardimg {
+	border-radius: 5px;
+	margin-top: 5%;
+}
+.playerselect {
+	outline: none;
+	background-color: red;
+	
+}

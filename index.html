@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Secret Hitler Setup</title>
+	<link rel="shortcut icon" href="banner-s.png" type="image/x-icon">  
+
+    <!--css-->
+	<link href="index.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="wrapper container selectDisable" style="margin-bottom: 2%;">
+	<img id="logo001" src="banner-new.png" class="img-fluid;" alt="Responsive image"/>
+  </div>
+
+<div class="wrapper container selectDisable" id="selectnum">
+<h1>HOW MANY PLAYERS?</h1>
+<input type="range" id="playerselect" min="5" max="10" value="5">
+<p>CURRENT PLAYERS: <span id="players"></span></p>
+<button onclick="playernum(slider.value)">SET</button>
+<script>
+  var slider = document.getElementById("playerselect");
+  var output = document.getElementById("players");
+  output.innerHTML = slider.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+</script>
+</div>
+
+<script src="functions.js"></script>
+  
+    <div class ="wrapper container" style ="margin-top: 1%">
+		<div class="row justify-content-center" id="rowofcards">
+			<!--<div class="col-4 col-md-2 col-lg-1" id="col001">
+			<a onclick="myCard('card001')"><img class="cardimg" src="partymembership.png" id="card001" draggable="false"/></a>
+		</div>-->
+		
+	<!--	<div class="col-4 col-md-2 col-lg-1" id="col002">
+			<a onclick="myCard('card002')"><img class="cardimg" src="partymembership.png" id="card002" draggable="false"/></a>
+		</div>
+		<div class="col-4 col-md-2 col-lg-1" id="col003">
+			<a onclick="myCard('card003')"><img class="cardimg" src="partymembership.png" id="card003" draggable="false"/></a>
+			
+		</div>
+		<div class="col-4 col-md-2 col-lg-1" id="col004">
+			<a onclick="myCard('card004')"><img class="cardimg" src="partymembership.png" id="card004" draggable="false"/></a>
+		</div>
+		<div class="col-4 col-md-2 col-lg-1" id="col005">
+			<a onclick="myCard('card005')"><img class="cardimg" src="partymembership.png"id="card005" draggable="false"/></a>
+		</div>
+		<div class="col-4 col-md-2 col-lg-1" id="col006">
+			<a onclick="myCard('card006')"><img class="cardimg" src="partymembership.png"id="card006" draggable="false"/></a>
+		</div>
+		<div class="col-4 col-md-2 col-lg-1" id="col007">
+			<a onclick="myCard('card007')"><img class="cardimg" src="partymembership.png"id="card007" draggable="false"/></a>
+		</div>
+		<div class="col-4 col-md-2 col-lg-1" id="col008">
+			<a onclick="myCard('card008')"><img class="cardimg" src="partymembership.png" id="card008" draggable="false"/></a>
+		</div>
+		<div class="col-4 col-md-2 col-lg-1" id="col009">
+			<a onclick="myCard('card009')"><img class="cardimg" src="partymembership.png" id="card009" draggable="false"/></a>
+		</div>
+		<div class="col-4 col-md-2 col-lg-1" id="col010">
+			<a onclick="myCard('card010')"><img class="cardimg" src="partymembership.png" id="card010" draggable="false"/></a>
+		</div>-->
+
+
+  </div>
+</div>
+
+<div class="wrapper container" style="margin-top: 1%; padding-bottom: 50px;">
+<button onclick="imDone()" id="donebutton" style="opacity:0;">DONE</button>
+
+</div>
+<div class="wrapper container">
+</div>
+
+  <div style="margin-bottom: -10px;position: fixed; bottom: 0; width:100%;">
+	<p>SH SETUP EST. 2025</p>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
