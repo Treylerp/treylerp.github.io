@@ -143,7 +143,7 @@ console.log(Roles[select]);
 		{ transform: 'rotateY(180deg)' }// Shrink to 80%
       ],
       {
-        duration: 1000, // Animation duration in milliseconds
+        duration: 10000, // Animation duration in milliseconds
         easing: 'linear', // Animation timing function
         fill: 'forwards' // Keep the final state after animation
       }
