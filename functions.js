@@ -137,16 +137,50 @@ var select = 0;
 console.log(Roles[select]);
 	if(Roles[select] == 'liberal'){
 		selectedElement.setAttribute('id', "Active");
-		selectedElement.src="membership-liberal.png";
+		selectedElement.animate(
+      [
+        { transform: 'rotateY(0deg)' },
+		{ transform: 'rotateY(180deg)' }// Shrink to 80%
+      ],
+      {
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'linear', // Animation timing function
+        fill: 'forwards' // Keep the final state after animation
+      }
+    );
+	setTimeout(() => {selectedElement.src="membership-liberal.png"},500);
 		Roles.shift();
 		
 }	else if(Roles[select] == 'fascist'){
 	selectedElement.setAttribute('id', "Active");
-	selectedElement.src="membership-fascist.png";
+	selectedElement.animate(
+      [
+        { transform: 'rotateY(0deg)' },
+		{ transform: 'rotateY(180deg)' }// Shrink to 80%
+      ],
+      {
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'linear', // Animation timing function
+        fill: 'forwards' // Keep the final state after animation
+      }
+    );
+	setTimeout(() => {selectedElement.src="membership-fascist.png"},500);
 	Roles.shift();
 }	else if(Roles[select] == 'hitler'){
 	selectedElement.setAttribute('id', "Active");
-	selectedElement.src="hitler0.png";
+	selectedElement.animate(
+      [
+        { transform: 'rotateY(0deg)' },
+		{ transform: 'rotateY(180deg)' }// Shrink to 80%
+      ],
+      {
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'linear', // Animation timing function
+        fill: 'forwards' // Keep the final state after animation
+      }
+    );
+	setTimeout(() => {selectedElement.src=selectedElement.src="hitler0.png"},500);
+	
 	selectedElement.alt="Hitler!";
 	Roles.shift();
 	}
