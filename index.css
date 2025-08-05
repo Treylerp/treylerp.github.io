@@ -82,3 +82,6 @@ col {
 	background-color: red;
 	
 }
+#rowofcards{
+	transform-style: preserve-3d;
+}
