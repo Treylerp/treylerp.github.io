@@ -12,6 +12,7 @@ function createCards(playnumber) {
 	}else{
 	var playerSelector = getElementById('selectnum');
 	playerSelector.innerHTML = "";
+	console.log("playerSelector");
 	for(i = 0; i<playnumber; i++){
 	var cardattr = "myCard('card0"+cardnum+"')";
 	cardattr.toString();
