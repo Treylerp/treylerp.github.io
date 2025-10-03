@@ -10,6 +10,15 @@ function createCards(playnumber) {
 		cardnum = 1;
 		createCards(playnumber);
 	}else{
+	var playerSelector = getElementById('selectnum');
+	playerSelector.animate([
+        { transform: 'translateY(1000%)', opacity: 0},
+        { transform: 'translateY(0)', opacity: 1}
+    ], {
+        duration: 1000,
+        easing: 'ease-out',
+        fill: 'forwards' // Keep the final state after animation
+    });
 	for(i = 0; i<playnumber; i++){
 	var cardattr = "myCard('card0"+cardnum+"')";
 	cardattr.toString();
