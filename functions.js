@@ -11,14 +11,7 @@ function createCards(playnumber) {
 		createCards(playnumber);
 	}else{
 	var playerSelector = getElementById('selectnum');
-	playerSelector.animate([
-        { transform: 'translateY(0)', opacity: 1},
-        { transform: 'translateY(1000%)', opacity: 0}
-    ], {
-        duration: 1000,
-        easing: 'ease-out',
-        fill: 'forwards' // Keep the final state after animation
-    });
+	playerSelector.innerHTML = "";
 	for(i = 0; i<playnumber; i++){
 	var cardattr = "myCard('card0"+cardnum+"')";
 	cardattr.toString();
