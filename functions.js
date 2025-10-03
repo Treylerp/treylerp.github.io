@@ -12,8 +12,8 @@ function createCards(playnumber) {
 	}else{
 	var playerSelector = getElementById('selectnum');
 	playerSelector.animate([
-        { transform: 'translateY(1000%)', opacity: 0},
-        { transform: 'translateY(0)', opacity: 1}
+        { transform: 'translateY(0)', opacity: 1},
+        { transform: 'translateY(1000%)', opacity: 0}
     ], {
         duration: 1000,
         easing: 'ease-out',
